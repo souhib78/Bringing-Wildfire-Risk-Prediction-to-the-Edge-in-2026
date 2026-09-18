@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "author": "Algerian Wildfire Prediction Project",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": -20, "left": 150, "attrs": { "color": "red" } },
+    { "type": "wokwi-resistor", "id": "r1", "top": 0, "left": 150, "attrs": { "value": "220" } }
+  ],
+  "connections": [
+    [ "esp:D2", "r1:1", "green", [] ],
+    [ "r1:2", "led1:A", "green", [] ],
+    [ "led1:C", "esp:GND.1", "black", [] ]
+  ],
+  "dependencies": {}
+}
